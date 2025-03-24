@@ -1,9 +1,6 @@
 package br.com.fiap.main;
 // Ricardo Fernandes de Aquino (RM 554597)
-// Gustavo Jun Irizawa Ikeda (RM 554718)
-// Ana Clara Melo de Sousa (RM 559021)
 // Kauã Soares Guimarães – (RM559044)
-// Yasmin Bezerra Sobral – (RM558757)
 
 import br.com.fiap.bean.DespesaFamiliar;
 
