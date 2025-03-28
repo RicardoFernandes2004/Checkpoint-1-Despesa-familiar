@@ -23,7 +23,7 @@ public class Main {
         System.out.println("Qual é seu gasto com academia?");
         despesa.valorMensalidadeDaAcademia = sc.nextDouble();
 
-        System.out.printf("Sua renda familiar é %.3f \nCom um numero de moradores de %d \nSeu gasto com luz é %.3f \nSeu gasto com agua é %.3f \nSeu gasto com internet é %.3f \nSeu gasto com academia é %.3f \nO total de despesas é %.3f \nA sua renda liquida é %.3f ",despesa.rendaFamiliar, despesa.numeroDeMoradores, despesa.gastoComLuz, despesa.gastoComAgua, despesa.gastoComInternet, (despesa.valorMensalidadeDaAcademia * despesa.numeroDeMoradores), despesa.calcularTotalDeDespesas(), despesa.calcularRendaLiquida());
+        System.out.printf("Sua renda familiar é %.3f \nO seu gasto com despesas é %.3f \nA sua renda liquida é %.3f ",despesa.rendaFamiliar, despesa.calcularTotalDeDespesas(), despesa.calcularRendaLiquida());
 
     }
 }
