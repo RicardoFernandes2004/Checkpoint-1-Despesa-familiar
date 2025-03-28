@@ -10,20 +10,25 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         DespesaFamiliar despesa = new DespesaFamiliar();
-        System.out.println("Qual é sua renda familiar?");
-        despesa.rendaFamiliar = sc.nextDouble();
-        System.out.println("Qual é o número de moradores?");
-        despesa.numeroDeMoradores = sc.nextInt();
-        System.out.println("Qual é seu gasto com luz?");
-        despesa.gastoComLuz = sc.nextDouble();
-        System.out.println("Qual é seu gasto com agua?");
-        despesa.gastoComAgua = sc.nextDouble();
-        System.out.println("Qual é seu gasto com internet?");
-        despesa.gastoComInternet = sc.nextDouble();
-        System.out.println("Qual é seu gasto com academia?");
-        despesa.valorMensalidadeDaAcademia = sc.nextDouble();
+        try {
+            System.out.println("Qual é sua renda familiar?");
+            despesa.rendaFamiliar = sc.nextDouble();
+            System.out.println("Qual é o número de moradores?");
+            despesa.numeroDeMoradores = sc.nextInt();
+            System.out.println("Qual é seu gasto com luz?");
+            despesa.gastoComLuz = sc.nextDouble();
+            System.out.println("Qual é seu gasto com agua?");
+            despesa.gastoComAgua = sc.nextDouble();
+            System.out.println("Qual é seu gasto com internet?");
+            despesa.gastoComInternet = sc.nextDouble();
+            System.out.println("Qual é seu gasto com academia?");
+            despesa.valorMensalidadeDaAcademia = sc.nextDouble();
 
-        System.out.printf("Sua renda familiar é %.3f \nO seu gasto com despesas é %.3f \nA sua renda liquida é %.3f ",despesa.rendaFamiliar, despesa.calcularTotalDeDespesas(), despesa.calcularRendaLiquida());
+            System.out.printf("Sua renda familiar é %.3f \nO seu gasto com despesas é %.3f \nA sua renda liquida é %.3f ",despesa.rendaFamiliar, despesa.calcularTotalDeDespesas(), despesa.calcularRendaLiquida());
+        } catch (Exception e) {
+            System.out.println("Formato Invalido: " + e);
+        }
+
 
     }
 }
